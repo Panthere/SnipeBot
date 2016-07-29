@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SnipeBot.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Username</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Password</Value>
+    </Setting>
+    <Setting Name="GoogleAuthValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Auth Token</Value>
+    </Setting>
+    <Setting Name="AuthType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ptc</Value>
+    </Setting>
+    <Setting Name="Lat" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Lng" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Altitude" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BerriesProbability" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ChkBerries" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CoordRegex" Type="System.String" Scope="User">
+      <Value Profile="(Default)">([a-zA-Z]{3,40})(?: at)?[^a-zA-HJ-UW-Z]+?(-?\d+.\d+)[,\s;]+(-?\d+.\d+)</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
