@@ -136,6 +136,7 @@ namespace SnipeBot.Bot
                 { 
                     Logger.Write($"Post Execute Exception: {ex}", LogLevel.Info, ConsoleColor.Red);
                 }
+                Logger.Write("Restarting...", LogLevel.Info, ConsoleColor.Red);
                 await Task.Delay(1000);
             }
             Logger.Write($"Bot being stopped, perhaps login failed?", LogLevel.Info, ConsoleColor.Red);
@@ -236,6 +237,7 @@ namespace SnipeBot.Bot
                     {
                         Logger.Write("No Pokeballs to use! STOPPING BOT!", LogLevel.Error, ConsoleColor.Red);
                         running = false;
+
                         return;
                     }
                     caughtPokemonResponse = await _client.Encounter.CatchPokemon(pokemon.EncounterId, pokemon.SpawnPointId, pokeball);
@@ -248,6 +250,11 @@ namespace SnipeBot.Bot
                     }
 
                     await T.Delay(rand.Next(1500, 3000));
+                }
+                catch (InvalidResponseException)
+                {
+                    Logger.Write($"Cannot continue the snipe as we've hit an invalid response. Restarting!", LogLevel.Error, ConsoleColor.Red);
+                    break;
                 }
                 catch (Exception ex)
                 {
