@@ -217,6 +217,7 @@ namespace SnipeBot.Bot
             CatchPokemonResponse caughtPokemonResponse;
             do
             {
+                top:
                 try
                 {
                     PokemonData pokeData = encounter?.WildPokemon?.PokemonData;
@@ -251,7 +252,7 @@ namespace SnipeBot.Bot
                 catch (Exception ex)
                 {
                     Logger.Write($"Exception in Encounter: {ex}", LogLevel.Error, ConsoleColor.Red);
-                    break;
+                    goto top;
                 }
             }
             while (caughtPokemonResponse.Status == CatchPokemonResponse.Types.CatchStatus.CatchMissed);
