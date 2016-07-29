@@ -13,5 +13,8 @@ This bot tries to avoid them at all costs, but if the method is patched, then it
 - Colorful Log
 - Custom regex. The default is for the bot in #sniping in the NecroBot discord.
 
+# API Link
+https://github.com/FeroxRev/Pokemon-Go-Rocket-API
+
 ![GUI](http://i.imgur.com/SZiB67x.png)
 ![Log 1](http://i.imgur.com/CzmdjSK.png)
