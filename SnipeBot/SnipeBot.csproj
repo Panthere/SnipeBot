@@ -58,12 +58,6 @@
     <Reference Include="POGOProtos">
       <HintPath>..\..\..\..\GitHub\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\POGOProtos.dll</HintPath>
     </Reference>
-    <Reference Include="Pokemon Go Rocket API">
-      <HintPath>..\..\..\..\GitHub\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\Pokemon Go Rocket API.dll</HintPath>
-    </Reference>
-    <Reference Include="Pokemon.Go.Rocket.API">
-      <HintPath>..\..\..\..\GitHub\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\Pokemon.Go.Rocket.API.dll</HintPath>
-    </Reference>
     <Reference Include="S2Geometry">
       <HintPath>..\..\..\..\GitHub\Pokemon-Go-Rocket-API\PokemonGo.RocketAPI\bin\Debug\S2Geometry.dll</HintPath>
     </Reference>
@@ -133,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="go.ico" />
+    <Content Include="Pokemon Go Rocket API.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
